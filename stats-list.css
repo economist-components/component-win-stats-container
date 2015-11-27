@@ -1,0 +1,14 @@
+@import "@economist/component-stats";
+
+.stats__stat-term, .stats__stat-description {
+  margin-bottom: var(--stat-vertical-gap);
+}
+.stats__stat-term, .stats__stat-description {
+  background-color: var(--stat-background-color);
+  color: var(--stat-text-color);
+  padding: var(--stat-padding-ys, 0px) var(--stat-padding-xs, 0px);
+  font-size: var(--stat-font-size, 14px);
+}
+.stats__stat-term:after {
+  content: ':';
+}
