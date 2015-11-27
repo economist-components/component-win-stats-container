@@ -1,5 +1,5 @@
-# component-win-country
-> Show information about a country
+# component-win-stats-container
+> Show information about a group of stats (e.g. a country)
 
 ### `Country` as parseable by a [`component-articletemplate/body`](http://github.com/economist-components/component-articletemplate)
 

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { codify } from './utils';
 
-function CountryHeader({ className = 'country', title, icon }) {
+function StatsContainerHeader({ className = 'stats-container', title, icon }) {
   let iconEl = null;
   if (icon) {
     iconEl = <div className={[ `${className}__header-icon`, `${className}__header-icon-${icon}` ].join(' ')}></div>;
@@ -16,11 +16,11 @@ function CountryHeader({ className = 'country', title, icon }) {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  CountryHeader.propTypes = {
+  StatsContainerHeader.propTypes = {
     className: PropTypes.string,
     title: PropTypes.string,
     icon: PropTypes.string,
   };
 }
 
-export default CountryHeader;
+export default StatsContainerHeader;

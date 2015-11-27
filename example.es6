@@ -1,5 +1,5 @@
 import React from 'react';
-import Country from '.';
+import { Country } from '.';
 
 const countryStats = [
   {

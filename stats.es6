@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import StatsList from '@economist/component-stats';
 
-function CountryStats({ className = 'country', stats = [] }) {
+function StatsContainerStats({ className = 'stats-container', stats = [] }) {
   return (
     <aside className={`${className}__stats`}>
       <StatsList stats={stats} />
@@ -10,9 +10,9 @@ function CountryStats({ className = 'country', stats = [] }) {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  CountryStats.propTypes = {
+  StatsContainerStats.propTypes = {
     ...(StatsList.propTypes || {}),
   };
 }
 
-export default CountryStats;
+export default StatsContainerStats;

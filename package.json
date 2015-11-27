@@ -1,16 +1,16 @@
 {
-  "name": "@economist/component-win-country",
+  "name": "@economist/component-win-stats-container",
   "version": "1.0.0",
   "description": "Display and group stats",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/economist-components/component-win-country.git"
+    "url": "git+https://github.com/economist-components/component-win-stats-container.git"
   },
-  "homepage": "https://github.com/economist-components/component-win-country#readme",
+  "homepage": "https://github.com/economist-components/component-win-stats-container#readme",
   "bugs": {
-    "url": "https://github.com/economist-components/component-win-country/issues"
+    "url": "https://github.com/economist-components/component-win-stats-container/issues"
   },
   "main": "index.js",
   "files": [
