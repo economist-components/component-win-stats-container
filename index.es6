@@ -6,7 +6,7 @@ import StatsContainerStats from './stats';
 function StatsContainer({ className = 'stats-container', itemType = 'Thing', title, stats = [], children }) {
   let headerEl = null;
   if (title) {
-    headerEl = <StatsContainerHeader title={title} />;
+    headerEl = <StatsContainerHeader className={className} title={title} />;
   }
   return (
     <section className={className} itemScope itemType={`http://schema.org/${itemType}`}>

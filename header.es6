@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { codify } from './utils';
+import codify from 'slugger';
 
 function StatsContainerHeader({ className = 'stats-container', title, icon }) {
   let iconEl = null;
@@ -8,7 +8,7 @@ function StatsContainerHeader({ className = 'stats-container', title, icon }) {
   }
   return (
     <header className={`${className}__header`}>
-      <a name={codify(title)} />
+      <a name={codify(title, { decode: false })} />
       <h1 className={`${className}__header-text`} itemProp="name">{title}</h1>
       {iconEl}
     </header>

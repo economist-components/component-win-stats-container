@@ -126,7 +126,8 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "@economist/component-stats": "^1.0.0"
+    "@economist/component-stats": "^1.0.0",
+    "slugger": "^1.0.1"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.5.0",
