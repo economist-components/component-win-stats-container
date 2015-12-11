@@ -1,31 +1,72 @@
+@import '@economist/component-font-officina';
+@import '@economist/component-palette';
 @import './stats-list';
 
-:root {
-  --country-header-padding: 5px;
-  --country-header-text-transform: uppercase;
-  --country-header-background-color: #cfcfcf;
-  --country-header-text-color: white;
-  --country-header-font-size: 18px;
-
-  --stat-vertical-gap: 2px;
-
-  --stat-padding-ys: 2px;
-  --stat-padding-xs: 10px;
-  --stat-background-color: #efefef;
-  --stat-text-color: black;
-  --stat-font-size: 14px;
-
-  --stat-term-max-width: auto;
-  --stat-term-text-align: left;
-  --stat-description-text-align: right;
+.country {
+  margin: 0 7.5% 70px 7.5%;
 }
 
 .country__header {
-  background-color: var(--country-header-background-color);
-  color: var(--country-header-text-color);
-  text-transform: var(--country-header-text-transform, none);
+  position: relative;
+  border-bottom: 1px solid #979797;
+  height: 41px;
+  margin-bottom: 18px;
 }
+
+.country__header-text,
+.country__header-icon {
+  position: absolute;
+}
+
 .country__header-text {
-  font-size: var(--country-header-font-size);
-  padding: var(--country-header-padding, 0px);
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px solid var(--color-economist);
+  font-family: 'Officina';
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 40px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.country__header-icon {
+  right: 0;
+}
+
+.country__content {
+  width: 50%;
+}
+
+.country__content > p {
+  margin-top: 0;
+}
+
+.country__stats {
+  width: 40%;
+  float: right;
+}
+
+@media screen and (max-width: 860px) {
+  .country__content {
+    width: 100%;
+  }
+
+  .country__stats {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .country__header-text {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .country__content > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
