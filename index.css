@@ -3,7 +3,10 @@
 @import './stats-list';
 
 .country {
-  margin: 0 7.5% 70px 7.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  max-width: 836px;
 }
 
 .country__header {
@@ -36,7 +39,7 @@
 }
 
 .country__content {
-  width: 50%;
+  width: 55%;
 }
 
 .country__content > p {
@@ -44,11 +47,16 @@
 }
 
 .country__stats {
-  width: 42%;
+  width: 38%;
   float: right;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 860px) {
+  .country {
+    max-width: 502px;
+  }
+
   .country__content {
     width: 100%;
   }
@@ -56,6 +64,14 @@
   .country__stats {
     width: 100%;
     overflow: hidden;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .country {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
 }
 

@@ -21,6 +21,6 @@
 @media screen and (max-width: 480px) {
   .stats__stat-term, .stats__stat-description {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
   }
 }
