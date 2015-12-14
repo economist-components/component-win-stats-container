@@ -1,14 +1,26 @@
 @import "@economist/component-stats";
 
-.stats__stat-term, .stats__stat-description {
-  margin-bottom: var(--stat-vertical-gap);
+.stats__list {
+  margin: 0;
 }
-.stats__stat-term, .stats__stat-description {
-  background-color: var(--stat-background-color);
-  color: var(--stat-text-color);
-  padding: var(--stat-padding-ys, 0px) var(--stat-padding-xs, 0px);
-  font-size: var(--stat-font-size, 14px);
+
+.stats__stat-term {
+  font-weight: bold;
 }
-.stats__stat-term:after {
-  content: ':';
+
+.stats__stat-term, .stats__stat-description {
+  background-color: #E7EBEB;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-family: 'Officina';
+  font-size: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+  .stats__stat-term, .stats__stat-description {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
