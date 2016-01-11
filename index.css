@@ -46,6 +46,16 @@
   margin-top: 0;
 }
 
+.country__content strong:first-of-type {
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 4px solid  var(--color-economist);
+  font-family: 'Officina';
+  font-weight: bold;
+  clear: both;
+  display: table;
+}
+
 .country__stats {
   width: 38%;
   float: right;
